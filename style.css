@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+    'header header'
+    'aside main';
+}
+
+body header {
+    grid-area: header;
+    height: 100px;
+    text-align: center;
+    /* border: solid;
+    border-color: white; */
+}
+
+body aside {
+    grid-area: aside;
+    height: 500px;
+
+}
+
+body main {
+    grid-area: main;
+    margin-top: 10px;
+}
+
+
+h1 {
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.card h2, p {
+    color: white;
+}
+
+.card {
+    width: 150px;
+    height: auto;
+    background-color: black;
+}
+.card h1 {
+    margin-bottom: lpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.card-img-top {
+    width: 280px;
+    height: 230px;
+    border-radius: 12px;
+    object-fit: cover;
+    object-position:center;
+}
+
+h5 {
+    color: #828584;
+}
+
+input {
+    margin: 10px;
+    width: auto;
+    height: 25px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+
+.formulario {
+    background-color: #1b312f;
+    color: white;
+    width: 240px;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+button {
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+
+
+main{ 
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
